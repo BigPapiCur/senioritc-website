@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Bedankt voor je bericht.">
+<title>Bedankt – Senior IT Consultancy</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><svg width="42" height="42" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="9" fill="#1e2d4a"/><path d="M9 16h14M16 9v14" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="16" r="5" fill="none" stroke="#d97706" stroke-width="1.5"/></svg><div class="logo-text"><span class="logo-main">Senior IT</span><span class="logo-sub">Consultancy</span></div></a>
+    <div class="menu"><a href="index.html">Home</a><a href="diensten.html">Diensten</a><a href="aanpak.html">Aanpak</a><a href="over-mij.html">Over mij</a></div>
+    <a class="btn" href="contact.html">Kennismaken</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav"><a href="index.html">Home</a><a href="diensten.html">Diensten</a><a href="aanpak.html">Aanpak</a><a href="over-mij.html">Over mij</a><a href="contact.html">Contact</a></nav>
+
+<section style="min-height:80vh;display:flex;align-items:center;padding-top:100px;">
+  <div class="wrap" style="text-align:center;">
+    <div style="font-size:52px;margin-bottom:24px;">✅</div>
+    <div class="hero-kicker" style="justify-content:center;margin-bottom:20px;"><span class="kicker-dot"></span>Bericht ontvangen</div>
+    <h1 style="font-size:clamp(28px,4vw,44px);font-weight:800;color:#1e2d4a;margin-bottom:16px;letter-spacing:-0.5px;">Bedankt voor je bericht</h1>
+    <p style="color:#64748b;font-size:17px;max-width:480px;margin:0 auto 40px;line-height:1.8;">Ik neem zo snel mogelijk contact met je op, meestal binnen een werkdag.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a class="btn big" href="index.html">Terug naar home</a>
+      <a class="btn-ghost big" href="diensten.html">Bekijk mijn diensten</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-brand"><svg width="34" height="34" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="9" fill="#1e2d4a"/><path d="M9 16h14M16 9v14" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="16" cy="16" r="5" fill="none" stroke="#d97706" stroke-width="1.5"/></svg><span>Senior IT Consultancy</span></div>
+    <div class="footer-links"><a href="diensten.html">Diensten</a><a href="aanpak.html">Aanpak</a><a href="over-mij.html">Over mij</a><a href="contact.html">Contact</a></div>
+    <span class="footer-copy">© 2025 Senior IT Consultancy</span>
+  </div>
+</footer>
+<script>
+const h=document.getElementById('hamburger'),m=document.getElementById('mobileNav');
+if(h&&m){h.addEventListener('click',()=>{h.classList.toggle('open');m.classList.toggle('open');});m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{h.classList.remove('open');m.classList.remove('open');}));}
+</script>
+</body>
+</html>
